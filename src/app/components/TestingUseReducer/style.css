@@ -1,0 +1,13 @@
+button:hover {
+  transform: scale(1.05);
+}
+
+p {
+  padding: 0.5rem 0;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0.5rem 0;
+}

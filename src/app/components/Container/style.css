@@ -1,0 +1,12 @@
+.back-button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+  color: darkslategrey;
+  padding: 1.5 rem;
+}
+
+.back-button:hover {
+  color: rgb(29, 49, 49);
+}
