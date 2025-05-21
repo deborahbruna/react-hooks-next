@@ -17,7 +17,7 @@ export default function TestingUseReducer() {
   const [count, countDispatch] = useReducer(countReducer, 0);
 
   return (
-    <div>
+    <div className='content-box'>
       <h1>Testing useReducer</h1>
 
       <br></br>

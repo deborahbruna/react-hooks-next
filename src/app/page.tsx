@@ -4,6 +4,7 @@ import styles from './page.module.css';
 import TestingUseReducer from './components/TestingUseReducer';
 import { useState } from 'react';
 import Container from './components/Container';
+import { TestingUseRef } from './components/TestingUseRef';
 
 export default function Home() {
   const [displayContent, setDisplayContent] = useState('home');
@@ -14,15 +15,16 @@ export default function Home() {
         {displayContent === 'home' && (
           <div className='buttons'>
             <button onClick={() => setDisplayContent('useReducer')}>
-              {' '}
               useReducer
             </button>
+            <button onClick={() => setDisplayContent('useRef')}>useRef</button>
           </div>
         )}
 
-        {displayContent === 'useReducer' && (
+        {displayContent !== 'home' && (
           <Container backHome={() => setDisplayContent('home')}>
-            <TestingUseReducer />
+            {displayContent === 'useReducer' && <TestingUseReducer />}
+            {displayContent === 'useRef' && <TestingUseRef />}
           </Container>
         )}
       </main>
